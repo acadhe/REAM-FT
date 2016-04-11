@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>CSS-Only Responsive Layout with Smooth Transitions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="CSS-only Responsive Layout with Smooth Transitions" />
+        <meta name="keywords" content="css3, transitions, animations, css-only, navigation, smooth scrolling, full width, full height, window width, window height" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+
+		 <link rel="stylesheet" href="css/style3.css" type="text/css" media="screen"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="sliding.form.js"></script>
+		<!--[if lte IE 8]>
+			 <link rel="stylesheet" type="text/css" href="css/simple.css" />
+		<![endif]-->
+    </head>
+    <style>
+        span.reference{
+            position:fixed;
+            left:5px;
+            top:5px;
+            font-size:10px;
+            text-shadow:1px 1px 1px #fff;
+        }
+        span.reference a{
+            color:#555;
+            text-decoration:none;
+			text-transform:uppercase;
+        }
+        span.reference a:hover{
+            color:#000;
+            
+        }
+
+        h1{
+            color:#ccc;
+            font-size:36px;
+            text-shadow:1px 1px 1px #fff;
+            padding:0px;
+        }
+    </style>
+    <body>
+        <div class="container">
+		
+			<!-- Codrops top bar 
+            <div class="codrops-top">
+                <a href="http://tympanus.net/Tutorials/CSS3ImageAccordion/">
+                    <strong>&laquo; Previous Demo: </strong>Image Accordion with CSS3
+                </a>
+                <span class="right">
+                    <a href="http://tympanus.net/codrops/2012/06/12/css-only-responsive-layout-with-smooth-transitions/">
+                        <strong>Back to the Codrops Article</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div> // Codrops top bar -->
+			
+			<div class="st-container">
+			
+				<input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
+				<a href="#st-panel-1">Proyecto</a>
+				<input type="radio" name="radio-set" id="st-control-2"/>
+				<a href="#st-panel-2">Informe</a>
+				<input type="radio" name="radio-set" id="st-control-3"/>
+				<!--<a href="#st-panel-3">Tranquillity</a>
+				<input type="radio" name="radio-set" id="st-control-4"/>
+				<a href="#st-panel-4">Positivity</a>
+				<input type="radio" name="radio-set" id="st-control-5"/>
+				<a href="#st-panel-5">Passion</a> -->
+				
+				<div class="st-scroll">
+				
+					<!-- Placeholder text from http://hipsteripsum.me/ -->
+					
+					<section class="st-panel" id="st-panel-1">
+						<div class="st-deco" data-icon="H"></div>
+						<h2>REAM</h2>
+						<p>Red de Comercios Accesibles de Málaga</p>
+                        <div class="CSSTableGenerator" >
+                <table  class="fixed">
+                    <col width="30px" />
+    <col width="30px" />
+    <col width="30px" />
+                    <tr>
+                        <th>
+                            Acerca del Proyecto
+                        </th>
+                        <th>
+                            Metodología
+                        </th>
+                        <th>
+                            Herramienta
+                        </th>
+                    </tr>
+                    <tr>
+                        <td >
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista                        
+                       </td>
+                        <td>
+                            Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista 
+                        </td>
+                        <td>
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista
+                           Mi mama se llama bety yo me llamo arturo soy urbanista 
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+            
+					</section>
+					
+                
+
+					<section class="st-panel st-color" id="st-panel-2">
+						<div class="st-deco" data-icon="2"></div>
+						<h2>Happiness</h2>
+						<!--<p>Art party readymade beard labore cosby sweater culpa. Art party whatever incididunt, scenester umami polaroid tofu.</p>-->
+						<!--<iframe width="100%" height="520" frameborder="0" src="https://acadhe.cartodb.com/viz/cda82d8a-cddb-11e5-accc-0ecfd53eb7d3/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>-->
+						 <div id="content">
+          <!--  <h1>Fancy Sliding Form with jQuery</h1> -->
+            <div id="wrapper">
+                <div id="steps">
+                   <form id="formElem" name="formElem" action="" method="post">
+                        <fieldset class="step">
+                            <div id="map" >
+                            	<div id="title" class="scroll">
+
+                            		<h1>mapa de malaga</h1>
+                                    <img src = 'img/arturo.jpg' width='50%'>
+                                    <p> 
+                            		Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista                                    
+                          			</p>
+
+                            	</div>
+                            		
+                            	<iframe width="100%" height="100%" frameborder="0" src="https://acadhe.cartodb.com/viz/cfc19ee2-fdd5-11e5-85d8-0ecfd53eb7d3/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                            </div>
+                           <!-- <legend>Account</legend>
+                            <p>
+                                <label for="username">User name</label>
+                                <input id="username" name="username" />
+                            </p>
+                            <p>
+                                <label for="email">Email</label>
+                                <input id="email" name="email" placeholder="info@tympanus.net" type="email" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="password">Password</label>
+                                <input id="password" name="password" type="password" AUTOCOMPLETE=OFF />
+                            </p> -->
+                        </fieldset> 
+                        <fieldset class="step">
+
+                            <div id="map" >
+                                <div id="title" class="scroll">
+
+                                    <h1>mapa de malaga</h1>
+                                    <img src = 'img/arturo.jpg' width='50%'>
+                                    <p> 
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista
+                                    Mi mama se llama bety yo me llamo arturo soy urbanista                                    
+                                    </p>
+
+                                </div>
+                           
+                                    <iframe width="100%" height="100%" frameborder="0"  src="https://acadhe.cartodb.com/viz/cda82d8a-cddb-11e5-accc-0ecfd53eb7d3/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                            </div>
+                           <!-- <p>
+                                <label for="name">Full Name</label>
+                                <input id="name" name="name" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="country">Country</label>
+                                <input id="country" name="country" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="phone">Phone</label>
+                                <input id="phone" name="phone" placeholder="e.g. +351215555555" type="tel" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="website">Website</label>
+                                <input id="website" name="website" placeholder="e.g. http://www.codrops.com" type="tel" AUTOCOMPLETE=OFF />
+                            </p> -->
+                        </fieldset>
+                        <fieldset class="step">
+                            <legend>Payment</legend>
+                            <!--<p>
+                                <label for="cardtype">Card</label>
+                                <select id="cardtype" name="cardtype">
+                                    <option>Visa</option>
+                                    <option>Mastercard</option>
+                                    <option>American Express</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="cardnumber">Card number</label>
+                                <input id="cardnumber" name="cardnumber" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="secure">Security code</label>
+                                <input id="secure" name="secure" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="namecard">Name on Card</label>
+                                <input id="namecard" name="namecard" type="text" AUTOCOMPLETE=OFF />
+                            </p> -->
+                        </fieldset>
+                        <fieldset class="step">
+                            <legend>Settings</legend>
+                           <!-- <p>
+                                <label for="newsletter">Newsletter</label>
+                                <select id="newsletter" name="newsletter">
+                                    <option value="Daily" selected>Daily</option>
+                                    <option value="Weekly">Weekly</option>
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Never">Never</option>
+                                </select>
+                            </p> -->
+                           <!-- <p>
+                                <label for="updates">Updates</label>
+                                <select id="updates" name="updates">
+                                    <option value="1" selected>Package 1</option>
+                                    <option value="2">Package 2</option>
+                                    <option value="0">Don't send updates</option>
+                                </select>
+                            </p>-->
+							<!--<p>
+                                <label for="tagname">Newsletter Tag</label>
+                                <input id="tagname" name="tagname" type="text" AUTOCOMPLETE=OFF />
+                            </p>-->
+                        </fieldset>
+						<fieldset class="step">
+                          <legend>Confirm</legend>
+							<!--<p>
+								Everything in the form was correctly filled 
+								if all the steps have a green checkmark icon.
+								A red checkmark icon indicates that some field 
+								is missing or filled out with invalid data. In this
+								last step the user can confirm the submission of
+								the form.
+							</p>
+                            <p class="submit">
+                                <button id="registerButton" type="submit">Register</button>
+                            </p>-->
+                        </fieldset>
+                        <fieldset class="step">
+                          <legend>Confirm</legend>
+                            <!--<p>
+                                Everything in the form was correctly filled 
+                                if all the steps have a green checkmark icon.
+                                A red checkmark icon indicates that some field 
+                                is missing or filled out with invalid data. In this
+                                last step the user can confirm the submission of
+                                the form.
+                            </p>
+                            <p class="submit">
+                                <button id="registerButton" type="submit">Register</button>
+                            </p>-->
+                        </fieldset>
+                        <fieldset class="step">
+                          <legend>Confirm</legend>
+                            <!--<p>
+                                Everything in the form was correctly filled 
+                                if all the steps have a green checkmark icon.
+                                A red checkmark icon indicates that some field 
+                                is missing or filled out with invalid data. In this
+                                last step the user can confirm the submission of
+                                the form.
+                            </p>
+                            <p class="submit">
+                                <button id="registerButton" type="submit">Register</button>
+                            </p>-->
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="navigation" style="display:none;">
+                    <ul>
+                        <li class="selected">
+                            <a href="#">Itinerario</a>
+                        </li>
+                        <li>
+                            <a href="#">Comercios</a>
+                        </li>
+                        <li>
+                            <a href="#">Veladores</a>
+                        </li>
+                        <li>
+                            <a href="#">Encuesta</a>
+                        </li>
+						<li>
+                            <a href="#">Confirm</a>
+                        </li>
+                        <li>
+                            <a href="#">Confirm</a>
+                        </li>
+                        <li>
+                            <a href="#">Confirm</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+					</section>
+					
+					<!--<section class="st-panel" id="st-panel-3">
+						<div class="st-deco" data-icon="B"></div>
+						<h2>Tranquillity</h2>
+						<p>Sint aute occaecat id vice. Post-ironic fap pork belly next level godard, id fanny pack williamsburg forage truffaut.</p>
+					</section>
+					
+					<section class="st-panel st-color" id="st-panel-4">
+						<div class="st-deco" data-icon="x"></div>
+						<h2>Positivity</h2>
+						<p>Mixtape fap leggings art party, butcher authentic farm-to-table you probably haven't heard of them do labore cosby sweater.</p>
+					</section>
+					
+					<section class="st-panel" id="st-panel-5">
+						<div class="st-deco" data-icon="Ç"></div>
+						<h2>Passion</h2>
+						<p>Fixie ad odd future polaroid dreamcatcher, nesciunt carles bicycle rights accusamus mcsweeney's mumblecore nulla irony.</p>
+					</section>-->
+
+				</div><!-- // st-scroll -->
+				
+			</div><!-- // st-container -->
+			
+        </div>
+	</body>
+</html>
